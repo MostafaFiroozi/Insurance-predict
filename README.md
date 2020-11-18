@@ -1,0 +1,2 @@
+# Insurance_predict
+In this project, our aim is to detect potential vehicle insurance buyers, bet`ween those of whom applied for a health insurance service. There is available a dataset with 102351 records, with the columns indicating the data related to each individual client, as depicted in the table 1. The “Target” attribute indicates that if the subject has been interested in the offer or not.
