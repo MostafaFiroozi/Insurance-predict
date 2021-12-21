@@ -30,17 +30,23 @@ of null values, etc. We split the data into categorical and numerical and we wil
 work on it.
 Firstly, we load our dataset in our program after importing the necessary Librar
 ies. Till now, the required libs are pandas, seaborn, numpy and mathplotlib.
+
+
 ![image](https://user-images.githubusercontent.com/73081215/146908014-1150ba13-a2db-4e76-97ae-d383c251fe94.png)
 
 
 Then, a quick glance at our dataset:
+
+
 ![image](https://user-images.githubusercontent.com/73081215/146908070-f1f557e5-0a05-45dd-9820-46f31939afb3.png)
 
 Now, we visualize the how the data is distributed between ‘ 1 ’ and’ 0 ’. Since the gap is not too much, we do not need to down sample the data.
+
 ![image](https://user-images.githubusercontent.com/73081215/146908170-03ecdef6-43d3-4387-b92e-ba21e03da1b2.png)
 
 We use df.info function to study all the info about this dataset. As the belo
 w image represents, we can see Data types, Non-Null values. There are some null values in the column “Licence_Type”, which we need to work on.
+
 ![image](https://user-images.githubusercontent.com/73081215/146908287-88be41c5-05bb-47ac-adfc-f199fb90c20c.png)
 
 
@@ -48,33 +54,41 @@ w image represents, we can see Data types, Non-Null values. There are some null 
 Categorical Attributes
 ```
 Using the function” df.isna().sum()”, it is illustrated that there are 5091 null values in that column.
+
 ![image](https://user-images.githubusercontent.com/73081215/146908424-3af158b5-4eca-4863-aa36-c9bc00b9cded.png)
 
 We attribute to all the null values in that column, a specific value, “N”, to
 be able to monitories the values, aiming to opt for eliminating these ‘null’ values or not.
+
 ![image](https://user-images.githubusercontent.com/73081215/146908487-3ba1818c-ac27-4cb6-addc-f32de92fadfb.png)
 
 Now we plot the distribution of all the categorical data between ‘ 0 ’ and’ 1’.
 We see in the all licence_Types the values are equally separated between ‘ 0 ’ and ‘ 1 ’, manifesting that it does not have any serious effect on the final prediction. So we can eliminate all the column, with no worry about corruption of the prediction procedure.
+
 ![image](https://user-images.githubusercontent.com/73081215/146908662-c6ab2775-5395-4ce2-85f0-41e7e6ea4a11.png)
+
 ![image](https://user-images.githubusercontent.com/73081215/146908820-cee24eea-8d4d-45bb-8c74-ac7b2eef3b9e.png)
 
 
 We also drop the column ‘id’, since it does not have any statistical value for us.
+
 ![image](https://user-images.githubusercontent.com/73081215/146908867-69fa0ff7-73f9-49fd-a8f5-295351ab3024.png)
 
 
 Now we need to define ‘dummy’ values for ‘Categorical’ attributes, to make them
 applicable in our ML algorithms.
+
 ![image](https://user-images.githubusercontent.com/73081215/146908928-a9b3f1f6-92e2-4fb1-a7c8-73142d4e0bbb.png)
 
 And, Replacing 'objects' with the 'dummy' values.
+
 ![image](https://user-images.githubusercontent.com/73081215/146908977-cd2dc97f-77bd-43f5-be49-af5674a8692e.png)
 
 ```
 Numerical Attributes
 ```
 The very first step with the ‘Numerical’ attributes is to plot the histogram to see its distribution. The below picture represents that, there is a sharp decrease in the ‘Annual_Premium’ attribute. So it would be reasonable the get a logarithm from it using the below code.
+
 ![image](https://user-images.githubusercontent.com/73081215/146909059-c491b9af-11e7-456b-ad6f-2cdcea0d847e.png)
 ![image](https://user-images.githubusercontent.com/73081215/146909292-4ae1a2f4-9aaa-4b43-8314-b0eb106e6a48.png)
 
@@ -97,6 +111,7 @@ Now, we will eliminate the ‘Annual_Premium’, since we will be working on
 
 Now, we can boxplot the ‘numerical’ attributes to make a comparison between the
 different distributions.
+
 ![image](https://user-images.githubusercontent.com/73081215/146909566-2d8766fc-aa02-47a4-8023-9aa883dfd0b0.png)
 
 
@@ -141,6 +156,7 @@ We define y as the ‘Target’ Values. Then we seperate train and test parts, c
 Now we can apply PCA to the data, to check whether we can see a sharp
 decrease in the data or not. Unfortunately, there is not, so, applying PCA to this
 dataset is not a good idea.
+
 ![image](https://user-images.githubusercontent.com/73081215/146910035-40eaf186-64de-4aab-86c4-ca24865a006f.png)
 
 
