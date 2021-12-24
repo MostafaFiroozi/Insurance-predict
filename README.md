@@ -52,9 +52,9 @@ w image represents, we can see Data types, Non-Null values. There are some null 
 ![image](https://user-images.githubusercontent.com/73081215/146908287-88be41c5-05bb-47ac-adfc-f199fb90c20c.png)
 
 
-```
-Categorical Attributes
-```
+
+## Categorical Attributes
+
 Using the function” df.isna().sum()”, it is illustrated that there are 5091 null values in that column.
 
 ![image](https://user-images.githubusercontent.com/73081215/146908424-3af158b5-4eca-4863-aa36-c9bc00b9cded.png)
@@ -96,7 +96,8 @@ The very first step with the ‘Numerical’ attributes is to plot the histogram
 
 
 We can see in the new histogram that ‘logAnnual_premium’ has a distribution
-more similar to normal.
+more similar to normal.![download](https://user-images.githubusercontent.com/73081215/147358192-43ce86b2-44bd-4c40-b29d-57729c528fb7.png)
+
 
 To see how each two ‘Numerical’ attributes distribute in the ‘Target’ value have, we can pair plot all of them a figure. We see the ‘Annual_Premium’ and the ‘log_annual_premium’ have a logarithmic shape relation with each other.
 
