@@ -43,6 +43,8 @@ Then, a quick glance at our dataset:
 Now, we visualize the how the data is distributed between ‘ 1 ’ and’ 0 ’. Since the gap is not too much, we do not need to down sample the data.
 
 ![image](https://user-images.githubusercontent.com/73081215/146908170-03ecdef6-43d3-4387-b92e-ba21e03da1b2.png)
+![image](https://user-images.githubusercontent.com/73081215/147357787-17916aa6-46e2-4e81-aa80-3d9ffcc1c624.png)
+
 
 We use df.info function to study all the info about this dataset. As the belo
 w image represents, we can see Data types, Non-Null values. There are some null values in the column “Licence_Type”, which we need to work on.
