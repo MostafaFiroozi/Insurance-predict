@@ -86,9 +86,9 @@ And, Replacing 'objects' with the 'dummy' values.
 
 ![image](https://user-images.githubusercontent.com/73081215/146908977-cd2dc97f-77bd-43f5-be49-af5674a8692e.png)
 
-```
-Numerical Attributes
-```
+
+## Numerical Attributes
+
 The very first step with the ‘Numerical’ attributes is to plot the histogram to see its distribution. The below picture represents that, there is a sharp decrease in the ‘Annual_Premium’ attribute. So it would be reasonable the get a logarithm from it using the below code.
 
 ![image](https://user-images.githubusercontent.com/73081215/146909059-c491b9af-11e7-456b-ad6f-2cdcea0d847e.png)
@@ -165,7 +165,7 @@ dataset is not a good idea.
 
 ## Prediction
 
-After all this investigations and data preparations, now we can apply our
+After all these investigations and data preparations, now we can apply our
 models to our dataset. First off, we import the necessary libraries.
 
 ![image](https://user-images.githubusercontent.com/73081215/146910059-2e805bbf-129f-4f62-8890-bc35f7bf9092.png)
